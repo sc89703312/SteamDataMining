@@ -1,0 +1,100 @@
+570:Bulgarian/Czech/Danish/Dutch/English/Finnish/French/German/Greek/Hungarian/Italian/Japanese/Korean/Norwegian/Polish/Portuguese/Portuguese - Brazil/Romanian/Russian/Simplified Chinese/Spanish - Spain/Swedish/Thai/Traditional Chinese/Turkish/Ukrainian
+578080:English/Korean/Simplified Chinese/French/German/Spanish - Spain/Arabic/Japanese/Polish/Portuguese/Russian/Turkish/Thai/Italian/Portuguese - Brazil/Traditional Chinese/Ukrainian
+440:English/Danish/Dutch/Finnish/French/German/Italian/Japanese/Norwegian/Polish/Portuguese/Russian/Simplified Chinese/Spanish - Spain/Swedish/Traditional Chinese/Korean/Czech/Hungarian/Portuguese - Brazil/Turkish/Greek/Bulgarian/Romanian/Thai/Ukrainian
+730:Czech/Danish/Dutch/English/Finnish/French/German/Hungarian/Italian/Japanese/Korean/Norwegian/Polish/Portuguese/Portuguese - Brazil/Romanian/Russian/Simplified Chinese/Spanish - Spain/Swedish/Thai/Traditional Chinese/Turkish/Bulgarian/Ukrainian
+304930:English
+230410:English/German/French/Italian/Korean/Spanish - Spain/Simplified Chinese/Russian/Japanese/Polish/Portuguese - Brazil/Traditional Chinese/Turkish/Ukrainian
+550:Danish/Dutch/English/Finnish/French/German/Italian/Japanese/Korean/Norwegian/Polish/Portuguese/Russian/Simplified Chinese/Spanish - Spain/Swedish/Traditional Chinese/Hungarian/Turkish
+340:English/French/German/Italian/Spanish - Spain/Russian/Simplified Chinese/Traditional Chinese/Korean
+227940:English/French/German/Spanish - Spain/Czech/Polish/Russian/Turkish/Portuguese - Brazil/Simplified Chinese
+218620:English/German/French/Italian/Spanish - Spain/Dutch/Russian
+320:English
+236390:English/German/French/Italian/Spanish - Spain/Simplified Chinese/Russian/Japanese/Polish/Czech/Turkish/Portuguese/Korean/Portuguese - Brazil/Hungarian/Ukrainian
+4000:English/French/Italian/German/Spanish - Spain/Bulgarian/Czech/Danish/Dutch/Finnish/Greek/Hungarian/Japanese/Korean/Norwegian/Polish/Portuguese/Portuguese - Brazil/Russian/Simplified Chinese/Swedish/Thai/Traditional Chinese/Turkish/Ukrainian
+240:English/French/German/Italian/Japanese/Korean/Spanish - Spain/Russian/Simplified Chinese/Traditional Chinese/Thai/Turkish
+301520:English/French/Italian/German/Spanish - Spain/Japanese/Portuguese - Brazil/Russian/Simplified Chinese/Traditional Chinese/Korean
+10:English/French/German/Italian/Spanish - Spain/Simplified Chinese/Traditional Chinese/Korean
+80:English/French/German/Italian/Spanish - Spain/Simplified Chinese/Traditional Chinese/Korean
+620:English/French/German/Spanish - Spain/Czech/Danish/Dutch/Finnish/Hungarian/Italian/Japanese/Korean/Norwegian/Polish/Portuguese/Romanian/Russian/Simplified Chinese/Swedish/Thai/Traditional Chinese/Turkish
+400:English/French/German/Russian/Danish/Dutch/Finnish/Italian/Japanese/Norwegian/Polish/Portuguese/Simplified Chinese/Spanish - Spain/Swedish/Traditional Chinese/Korean
+72850:English/French/German/Italian/Spanish - Spain/Japanese/Czech/Polish/Russian
+433850:English/French/German/Spanish - Spain/Korean/Portuguese - Brazil/Russian/Simplified Chinese
+291550:English
+291480:English/French/German/Polish/Spanish - Spain/Simplified Chinese/Portuguese - Brazil/Korean/Russian
+220:English/French/German/Italian/Korean/Spanish - Spain/Russian/Simplified Chinese/Traditional Chinese/Dutch/Danish/Finnish/Japanese/Norwegian/Polish/Portuguese/Swedish/Thai
+439700:English
+8930:English/French/German/Italian/Spanish - Spain/Polish/Japanese/Korean/Russian/Traditional Chinese
+271590:English/French/Italian/German/Spanish - Spain/Korean/Polish/Portuguese - Brazil/Russian/Traditional Chinese/Japanese/Simplified Chinese
+105600:English/French/Italian/German/Spanish - Spain/Polish/Portuguese - Brazil/Russian/Simplified Chinese
+304050:English/French/German/Portuguese - Brazil
+218230:English/German/French/Italian/Spanish - Spain
+224260:English/German/French/Japanese/Greek/Italian/Spanish - Spain/Hungarian/Russian/Swedish/Traditional Chinese/Ukrainian/Simplified Chinese
+333930:English/French/German/Portuguese - Brazil/Russian/Simplified Chinese
+360:English
+40:English/French/German/Italian/Spanish - Spain/Korean/Russian/Simplified Chinese/Traditional Chinese
+49520:English/French/German/Italian/Japanese/Spanish - Spain/Korean/Traditional Chinese
+386360:English/French/German/Spanish - Spain/Polish/Russian/Portuguese - Brazil/Turkish/Simplified Chinese
+30:English/French/German/Italian/Spanish - Spain
+322330:English
+550650:English/French/German/Spanish - Spain/Russian/Simplified Chinese/Traditional Chinese/Portuguese - Brazil/Japanese/Thai/Turkish/Korean/Portuguese
+489830:English/French/Italian/German/Spanish - Spain/Polish/Traditional Chinese/Russian/Japanese
+60:English/French/German/Italian/Spanish - Spain/Korean/Russian/Simplified Chinese/Traditional Chinese
+380:English/French/German/Italian/Korean/Spanish - Spain/Russian/Simplified Chinese/Traditional Chinese/Dutch/Danish/Finnish/Japanese/Norwegian/Polish/Portuguese/Swedish/Thai
+15700:English/French/German/Italian/Japanese/Spanish - Spain
+300:English
+252490:English/French/Italian/German/Spanish - Spain/Japanese/Korean/Russian/Simplified Chinese/Ukrainian
+70:English/French/German/Italian/Spanish - Spain/Simplified Chinese/Traditional Chinese/Korean
+359550:English/French/Italian/German/Spanish - Spain/Czech/Dutch/Japanese/Korean/Polish/Portuguese - Brazil/Russian/Traditional Chinese/Simplified Chinese/Turkish
+420:English/French/German/Russian/Danish/Dutch/Finnish/Italian/Japanese/Korean/Norwegian/Polish/Portuguese/Simplified Chinese/Spanish - Spain/Swedish/Traditional Chinese
+50:English/French/German/Korean
+130:English/French/German
+363970:English/German/Spanish - Spain/Portuguese - Brazil/Russian/Simplified Chinese/Traditional Chinese/Turkish
+582010:English/French/Italian/German/Spanish - Spain/Arabic/Portuguese - Brazil/Polish/Traditional Chinese/Japanese/Korean/Russian
+407530:English/Simplified Chinese/Traditional Chinese/French/Italian/German/Spanish - Spain/Czech/Danish/Dutch/Finnish/Hungarian/Japanese/Korean/Polish/Portuguese - Brazil/Russian/Swedish/Thai/Turkish
+20:English/French/German/Italian/Spanish - Spain/Korean/Russian/Simplified Chinese/Traditional Chinese
+346110:English/French/Italian/German/Spanish - Spain/Russian/Portuguese - Brazil/Simplified Chinese/Czech/Danish/Dutch/Hungarian/Polish/Swedish/Thai/Traditional Chinese/Turkish/Ukrainian/Finnish/Japanese/Korean
+203160:English/German/French/Italian/Korean/Spanish - Spain/Traditional Chinese/Russian/Polish/Dutch/Czech/Portuguese - Brazil/Arabic
+219640:English/German/French/Italian/Spanish - Spain/Russian/Polish/Simplified Chinese/Traditional Chinese
+500:English/French/German/Spanish - Spain/Russian/Danish/Dutch/Finnish/Italian/Japanese/Norwegian/Polish/Portuguese/Simplified Chinese/Swedish/Traditional Chinese/Korean
+319630:English/French/Italian/German/Spanish - Spain/Portuguese - Brazil
+109600:English/French/Italian/German/Polish/Turkish/Portuguese - Brazil/Russian
+113400:English
+253710:English/French/Italian/German/Spanish - Spain/Czech/Danish/Dutch/Finnish/Hungarian/Norwegian/Polish/Portuguese/Portuguese - Brazil/Russian/Swedish/Turkish
+555570:English/French/Italian/German/Spanish - Spain/Dutch/Portuguese/Russian/Turkish/Portuguese - Brazil
+221380:English/German/French/Italian/Korean/Spanish - Spain/Simplified Chinese/Russian/Japanese/Dutch/Portuguese - Brazil
+227300:English/German/French/Italian/Korean/Spanish - Spain/Simplified Chinese/Russian/Japanese/Portuguese/Polish/Danish/Dutch/Finnish/Norwegian/Swedish/Hungarian/Czech/Romanian/Turkish/Portuguese - Brazil/Bulgarian/Greek/Ukrainian
+431960:English/German/Simplified Chinese/Dutch/Polish/Portuguese - Brazil/French/Italian/Spanish - Spain/Czech/Finnish/Japanese/Korean/Swedish/Thai/Traditional Chinese/Turkish
+57300:English/French/German/Italian/Spanish - Spain/Russian
+20920:English/German/French/Spanish - Spain/Russian/Czech/Hungarian/Japanese/Polish/Turkish/Traditional Chinese/Italian
+377160:English/French/Italian/German/Spanish - Spain/Polish/Portuguese - Brazil/Russian/Traditional Chinese/Japanese
+22380:English/French/German/Italian/Spanish - Spain
+1250:English/French/Italian/German/Spanish - Spain/Hungarian/Polish/Russian
+219740:English
+7670:English/French/German/Italian/Spanish - Spain
+255710:English/French/German/Spanish - Spain/Polish/Portuguese - Brazil/Russian/Simplified Chinese/Korean
+630:English
+280790:English
+12210:English/French/Italian/German/Spanish - Spain
+292030:English/French/Italian/German/Spanish - Spain/Arabic/Czech/Hungarian/Japanese/Korean/Polish/Portuguese - Brazil/Russian/Traditional Chinese/Turkish
+506540:English
+238320:English/French/Italian/German/Spanish - Spain/Russian/Polish/Portuguese - Brazil/Japanese
+8870:English/French/German/Italian/Spanish - Spain/Polish/Portuguese - Brazil/Russian/Japanese/Korean/Traditional Chinese
+209080:English
+55230:Czech/Dutch/English/French/German/Italian/Polish/Russian/Spanish - Spain
+48000:English/French/German/Italian/Japanese/Korean/Portuguese/Spanish - Spain/Traditional Chinese/Polish/Portuguese - Brazil/Russian/Simplified Chinese/Turkish
+24240:English/French/German/Italian/Spanish - Spain
+346900:English
+438100:English
+588430:English/French/Italian/German/Spanish - Spain/Russian
+241930:English/French/Italian/German/Spanish - Spain/Polish/Portuguese - Brazil/Russian
+8190:English/French/German/Italian/Spanish - Spain/Polish/Russian
+222880:English/French/German/Dutch/Polish/Portuguese - Brazil/Russian/Simplified Chinese/Italian/Spanish - Spain/Ukrainian
+12120:English
+444090:English/French/German/Spanish - Spain/Polish/Russian/Turkish/Portuguese - Brazil
+238960:English/Portuguese - Brazil/Russian/Thai/French/German/Spanish - Spain
+273110:English/French/German/Russian/Turkish/Spanish - Spain
+252950:English/French/Italian/German/Spanish - Spain/Dutch/Portuguese/Japanese/Korean/Russian/Turkish/Polish
+208090:English/French/German/Italian/Polish/Portuguese/Romanian/Russian/Spanish - Spain/Swedish/Turkish
+10180:English/French/German/Italian/Spanish - Spain
+339610:English/German/French/Thai/Japanese
+323370:English
