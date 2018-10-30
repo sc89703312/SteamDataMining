@@ -22,9 +22,6 @@ for item in raw_data:
     if flush_every == counter:
         fo = open('data/tmp_' + str(time.time()) + r".txt", "w", encoding='utf-8')
         fo.write("/".join(tags_tmp))
-        # fo.write("\n")
-        # fo.write("/".join(langs_tmp))
-        # fo.write("\n")
         fo.flush()
         fo.close()
 
@@ -32,4 +29,4 @@ for item in raw_data:
         langs_tmp = []
         counter = 0
 
-        time.sleep(5)
+        time.sleep(2)
