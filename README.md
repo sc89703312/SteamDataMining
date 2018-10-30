@@ -20,7 +20,7 @@
 
 ## Dynamic Representation
 使用了 `Flask`+ `Jinja2` 作为 Web端框架  
-使用了 `Flask SSE` 作为服务端推送组件，该组件需要依赖 `Redis`  
+使用了 `Flask SSE` 作为服务端推送组件，该组件需要依赖 `Redis`  `gunicorn`  `gevent`
 使用了 `Echarts` 作为图表展示工具  
 > gunicorn StreamingDR:app --worker-class gevent --bind 127.0.0.1:8000
 
