@@ -14,14 +14,17 @@
 
 ## Streaming
 使用了 PySpark Streaming 的 api ，一共两个进程  
-- 第一个进程: 流数据模拟 负责读取 `MongoDB` 中存储的原始数据，每次读取5条，间隔2s读一次。每次读完后，将数据中的 tags 信息写入到某个被监听的文件夹中  
-- 第二个进程: 流数据处理 每10s查询被监听的文件夹下有没有新文件写入 有的话就标签计数处理；计数处理完成后，服务器推送给 echarts 展示  
+- 第一个进程`MongoInputStreaming`: 流数据模拟 负责读取 `MongoDB` 中存储的原始数据，每次读取5条，间隔2s读一次。每次读完后，将数据中的 tags 信息写入到某个被监听的文件夹中  
+- 第二个进程`ListenerStreaming`: 流数据处理 每4s查询被监听的文件夹下有没有新文件写入 有的话就进行tag计数处理；计数处理完成后，将当前batch的处理结果写入文件；并统计目前已经处理过的所有batch的tags 将统计结果推送给 echarts 展示  
 
 
 ## Dynamic Representation
 使用了 `Flask`+ `Jinja2` 作为 Web端框架  
 使用了 `Flask SSE` 作为服务端推送组件，该组件需要依赖 `Redis`  
 使用了 `Echarts` 作为图表展示工具  
+> gunicorn StreamingDR:app --worker-class gevent --bind 127.0.0.1:8000
+
+------
 
 *动态展示流处理过程*
 ![](https://upload-images.jianshu.io/upload_images/6164211-3a9c15fd923f8475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
