@@ -1,4 +1,8 @@
 Streaming/data/
 Streaming/output/
+<<<<<<< HEAD
 Streaming/eval/
 Streaming/eval_output/
+=======
+.idea
+>>>>>>> origin/master
