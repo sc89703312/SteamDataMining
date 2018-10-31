@@ -25,7 +25,7 @@ lines = ssc.textFileStream("file://" + os.path.join(os.getcwd(), "data"))
 words = lines.flatMap(lambda line: line.split("/"))
 
 # Count each word in each batch
-pairs = words.map(lambda word: (word, 1))
+pairs = words.map(lambda word: (word.split(",")[0], float(word.split(",")[1])))
 wordCounts = pairs.reduceByKey(lambda x, y: x + y)
 
 ## 收集数据
@@ -48,7 +48,7 @@ def processEachRDD(rdd):
         ## 处理之前所有batch的tags 并输出到console
         cur_lines = sc.textFile("file://" + filepath)
         cur_tag_counts = cur_lines.flatMap(lambda line: line.split("/"))\
-            .map(lambda count: (count.split(",")[0], int(count.split(",")[1])))\
+            .map(lambda count: (count.split(",")[0], float(count.split(",")[1])))\
             .reduceByKey(lambda x, y: x + y)\
             .sortBy(lambda x: x[1], ascending=False)\
             .collect()

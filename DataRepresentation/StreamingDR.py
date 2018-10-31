@@ -12,19 +12,4 @@ def index():
 
 @app.route('/hello')
 def publish_hello():
-    test_tags = [
-        [
-            {"value": 100, "name": "A"},
-            {"value": 60, "name": "B"},
-            {"value": 40, "name": "C"},
-            {"value": 20, "name": "D"}
-        ],
-        [
-            {"value": 100, "name": "D"},
-            {"value": 60, "name": "C"},
-            {"value": 40, "name": "B"},
-            {"value": 20, "name": "A"}
-        ]
-    ]
-    sse.publish({"tags": random.choice(test_tags)}, type='greeting')
-    return "Message sent!"
+    return render_template("eval.html")
