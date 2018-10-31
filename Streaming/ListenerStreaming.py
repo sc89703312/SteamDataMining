@@ -19,7 +19,8 @@ sc = SparkContext("local[2]","TagsLangsCounter")
 ssc = StreamingContext(sc, 4)
 
 # 添加需要监听的本地路径
-lines = ssc.textFileStream("file://" + os.path.join(os.getcwd(), "data"))
+# lines = ssc.textFileStream("file://" + os.path.join(os.getcwd(), "data"))
+lines = ssc.textFileStream("hdfs://localhost:8020/user/echosheng/data/")
 
 # Split each line into words
 words = lines.flatMap(lambda line: line.split("/"))

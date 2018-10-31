@@ -24,7 +24,8 @@ sc = SparkContext("local[2]","EvalCounter")
 ssc = StreamingContext(sc, 1)
 
 # 添加需要监听的本地路径
-lines = ssc.textFileStream("file://" + os.path.join(os.getcwd(), "eval"))
+# lines = ssc.textFileStream("file://" + os.path.join(os.getcwd(), "eval"))
+lines = ssc.textFileStream("hdfs://localhost:8020/user/echosheng/eval/")
 
 res = lines.map(eval_split).map(sum)
 
@@ -80,7 +81,7 @@ def processEachRDD(rdd):
         print("totals: {}, ratio: {}".format(totals, up_ratio))
 
         with app.app_context():
-            sse.publish({"totals": totals, "up_ratio": up_ratio}, type='eval')
+            sse.publish({"totals": totals, "up_ratio": up_ratio, "max": totals[-1]}, type='eval')
 
 
 res.foreachRDD(processEachRDD)

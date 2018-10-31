@@ -1,9 +1,13 @@
 from pymongo import MongoClient
 import time
+import pyhdfs
+# from hdfs import *
 
-client = MongoClient('localhost', 27017)
+client = MongoClient('127.0.0.1', 27017)
 db = client.steam
 
+fs = pyhdfs.HdfsClient('127.0.0.1:50070')
+print(fs.listdir('/'))
 
 counter = 0
 flush_every = 5
@@ -26,7 +30,7 @@ for item in raw_data:
         langs_tmp.append(lang)
 
     if flush_every == counter:
-        fo = open('data/tmp_' + str(time.time()) + r".txt", "w", encoding='utf-8')
+        filepath = 'data/tmp_' + str(time.time()) + r".txt"
 
         res_str = ""
         tag_counter = 0
@@ -36,10 +40,8 @@ for item in raw_data:
                 res_str += "/"
             tag_counter += 1
 
-        fo.write(res_str)
-        fo.flush()
-        fo.close()
-
+        fs.create('/user/echosheng/' + filepath, data=res_str)
+        print("complete")
         tags_tmp = []
         langs_tmp = []
         counter = 0

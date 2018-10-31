@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dota2 Evaluations</title>
+  <title>Evaluations</title>
   <script src="{{ url_for('static', filename='echarts.min.js') }}"></script>
 </head>
 <body>
-  <h1>Dota2 Evaluations</h1>
+  <h1>Games Evaluations</h1>
 
    <div id="main" style="width: 100%;height: 600px;"></div>
 
@@ -51,8 +51,8 @@
                     type: 'value',
                     name: '数量',
                     min: 0,
-                    max: 1000000,
-                    interval: 50000,
+                    max: Math.max(100000, data.max),
+                    interval: Math.max(5000, Math.floor(data.max/20)),
                     axisLabel: {
                         formatter: '{value} 份'
                     }
