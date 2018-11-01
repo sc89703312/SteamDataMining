@@ -13,3 +13,7 @@ def index():
 @app.route('/hello')
 def publish_hello():
     return render_template("eval.html")
+
+@app.route('/price')
+def  price():
+    return render_template("prices.html")

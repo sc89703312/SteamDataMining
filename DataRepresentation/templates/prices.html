@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Steam Top100 Games</title>
+  <script src="{{ url_for('static', filename='echarts.min.js') }}"></script>
+</head>
+<body>
+  <h1>Steam Top100 Games Statistic</h1>
+
+   <div id="main" style="width: 100%;height: 1000px;"></div>
+
+  <script type="text/javascript">
+
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var option = {
+    title: {
+        text: 'Steam热门游戏',
+        subtext: '游戏均价与地区的关系'
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    }, toolbox: {
+                feature: {
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+    legend: {
+        data: ['最新价格－基于人民币']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: ["Turkish Lira","Argentine Peso","Russian Ruble","Chinese Yuan Renminbi","Indonesian Rupiah","Indian Rupee","Philippine Peso","Kazakhstani Tenge","Malaysian Ringgit","Brazilian Real","Vietnamese Dong","Mexican Peso","Thai Baht","Ukrainian Hryvnia","CIS - U.S. Dollar","Colombian Peso","South African Rand","Uruguayan Peso","Saudi Riyal","South Asia - U.S. Dollar","Chilean Peso","Peruvian Nuevo Sol","Singapore Dollar","Costa Rican Colon","Kuwaiti Dinar","Taiwan Dollar","Qatari Riyal","Hong Kong Dollar","Canadian Dollar","Norwegian Krone","New Zealand Dollar","U.A.E. Dirham","South Korean Won","Japanese Yen","British Pound","U.S. Dollar","Swiss Franc","Polish Zloty","Israeli New Shekel","Euro"
+]
+    },
+    series: [
+        {
+            name: '最新价格－基于人民币',
+            type: 'bar',
+            data: [41.68748904761904,43.870213532258056,45.09616129032256,52.888888888888886,53.64424861904762,57.149054838709645,57.31827214285717,57.652511475409845,59.17103111111112,60.53215479365078,62.037863225806454,62.25816355555559,65.07872883870968,67.07249999999996,72.56770161290322,74.10043666666668,77.20424303225805,79.10141129032257,79.29399466666669,81.47846787096772,81.91952380952381,83.0059048412698,83.12598801587302,83.72185483870967,85.28283400000001,85.38008888888888,87.0429672,88.03648253968255,94.90882814285717,96.15870301587303,97.19648209523814,97.93374047619048,98.56320967741942,102.36472258064515,104.63867046031741,106.97486488888889,107.38435933333335,107.52547014754099,111.2310098709678,115.71951009523805
+]
+        },
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+    </script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 import requests
 import urllib
 import urllib3
+import operator
 import json
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -20,6 +21,14 @@ CC_ALL_LIST = ["Chinese Yuan Renminbi", "Russian Ruble", "Turkish Lira", "Argent
                "Uruguayan Peso", "Colombian Peso", "Costa Rican Colon", "Singapore Dollar", "Chilean Peso", "South African Rand", "Peruvian Nuevo Sol", "Saudi Riyal", "Taiwan Dollar",
                "Hong Kong Dollar", "New Zealand Dollar", "Norwegian Krone", "U.A.E. Dirham", "Canadian Dollar", "Japanese Yen", "South Korean Won", "Israeli New Shekel", "Polish Zloty",
                "Swiss Franc", "British Pound", "U.S. Dollar", "Euro"]
+
+
+CC_RATIO = [1, 0.1060, 1.2489, 0.1943, 0.0941, 6.9732, 0.0188, 0.00029984, 0.000457,
+             0.2475, 1.666, 0.3431, 0.1305, 1.8743, 22.9512, 1.9152, 0.2106, 6.9755,
+             0.2125, 0.00217, 0.0115, 5.0345, 0.0100, 0.4722, 2.0719, 1.8592, 0.2254,
+             0.8894, 4.5506, 0.827, 1.8987, 5.3009, 0.0618, 0.0061, 1.8734, 1.8173,
+             6.9186, 8.9059, 6.9746, 7.8927]
+
 
 url = "https://steamdb.info/api/GetPriceHistory/"
 params = {"appid":730, "cc": "cn"}
@@ -81,5 +90,51 @@ def getSteamDB_HistoryPrice():
 
 
 
+# print(len(CC_LIST))
+# print(len(CC_RATIO))
+
+cc_ratio_dict = {}
+cc_all_dict = {}
+for cc, ratio, full in zip(CC_LIST, CC_RATIO, CC_ALL_LIST):
+    cc_ratio_dict[cc] = ratio
+    cc_all_dict[cc] = full
+
+# print(cc_ratio_dict)
+# print(cc_all_dict)
+
+db = client.steam
+pay_games = db.raw_data.find({"price": {"$gt": "0"}})
+pay_games_id = []
+for pay_game in pay_games:
+    pay_games_id.append(pay_game['appid'])
 # getSteamDB_HistoryPrice()
+print(pay_games_id)
+
+res = {}
+for cc in CC_LIST:
+    res[cc] = []
+
+# pay_games_id = [578080]
+for appid in pay_games_id:
+    prices = db.raw_history_price.find_one({"appid": appid})
+    # print(prices)
+    for cc in CC_LIST:
+        prices_cc = prices[cc]
+        if not len(prices_cc) == 0:
+            res[cc].append(prices_cc[-1][-1] * cc_ratio_dict[cc])
+
+for key, val in res.items():
+    res[key] = sum(val)/len(val)
+
+sorted_res = sorted(res.items(), key=lambda x: x[1])
+print(sorted_res)
+
+res_ls = []
+res_data_ls = []
+for key,value in sorted_res:
+    res_ls.append("\"" + cc_all_dict[key] + "\"")
+    res_data_ls.append(str(value))
+
+print(",".join(res_ls))
+print(",".join(res_data_ls))
 
