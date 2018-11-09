@@ -17,3 +17,7 @@ def publish_hello():
 @app.route('/price')
 def  price():
     return render_template("prices.html")
+
+@app.route('/relation')
+def  relation():
+    return render_template("relation.html")
