@@ -3,5 +3,5 @@ Streaming/output/
 Streaming/eval/
 Streaming/eval_output/
 .idea
-MLLIB/data/negative/
-MLLIB/data/positive/
+MLLIB/data/
+MLLIB/save/
