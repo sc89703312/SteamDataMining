@@ -1,6 +1,7 @@
 import requests
 from SteamDataMining.Weibo.url import *
 import queue
+import random
 import json
 from pymongo import MongoClient
 
@@ -62,22 +63,22 @@ def dataread():
     fo.close()
 
 def profileCrawl():
-    follow_id_set = set()
-    follows = collection.find()
-    for item in follows:
-        follow_id_set.add(item['user_id'])
-        for follow in item['follows:']:
-            follow_id_set.add(follow)
+    # follow_id_set = set()
+    # follows = collection.find()
+    # for item in follows:
+    #     follow_id_set.add(item['user_id'])
+    #     for follow in item['follows:']:
+    #         follow_id_set.add(follow)
 
+    new_ids = ['3591355593', '5306969855', '5458980394', '5342096824', '2921221870', '5129183523', '5163900683', '5616958603', '5204347897', '5339764274', '6072690178', '5172348469', '5836033089', '5828580158', '5894786566', '5147573595', '1846228427']
 
-
-    print(len(follow_id_set))
+    # print(len(follow_id_set))
     # print(follow_id_set)
-    counter = 0
-    for follow_id in follow_id_set:
-        counter += 1
-        if counter <= 15826:
-            continue
+    # counter = 0
+    for follow_id in new_ids:
+        # counter += 1
+        # if counter <= 15826:
+        #     continue
         # print(follow_id)
         cur_url = PEOPLE_DETAIL_URL.format(id=follow_id)
         res = requests.get(cur_url)
@@ -93,6 +94,36 @@ def profileCrawl():
                     "follow_count": userInfo['follow_count']
                 }
                 profile_coll.insert_one(inserted_item)
-                print("Complete {}".format(counter))
+                # print("Complete {}".format(counter))
 
-datacrawl()
+
+def processSingle():
+    file = open('/Users/echo/Desktop/hehe.txt', 'r', encoding='utf-8')
+    relations = open('/Users/echo/Desktop/relations.txt', 'a', encoding='utf-8')
+    lines = file.readlines()
+    print(len(lines))
+    new_ids = []
+    for line in lines:
+        new_ids.append(line.split(" ")[0])
+
+    print(new_ids)
+
+    relation = []
+    for former in new_ids:
+        for latter in new_ids:
+            if not former == latter and random.random() > 0.4:
+                relation.append(former + " " + latter)
+    #
+    #     # relation.append("3591355593 " + former)
+    print(relation)
+    print(len(relation))
+
+    for item in relation:
+        relations.write(item)
+        relations.write("\n")
+
+
+
+
+
+processSingle()

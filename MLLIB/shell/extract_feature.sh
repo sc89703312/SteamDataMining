@@ -1,0 +1,1 @@
+python extract_features.py --input_file=comment/comments.txt --output_file=comment/features.jsonl --vocab_file=$BERT_CHINESE_DIR/vocab.txt --bert_config_file=$BERT_CHINESE_DIR/bert_config.json --init_checkpoint=$BERT_CHINESE_DIR/bert_model.ckpt --layers=-1 --max_seq_length=64 --batch_size=6
