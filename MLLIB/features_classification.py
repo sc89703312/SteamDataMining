@@ -17,7 +17,8 @@ for comment in comment_list:
 
 # 计算特征向量的维数
 # feature_file_path = "/Users/echo/Desktop/SK_Learning/SteamDataMining/MLLIB/data/libsvm_classification.txt"
-feature_file_path = "/Users/echo/Desktop/SK_Learning/SteamDataMining/MLLIB/data/libsvm_word2vec_classification.txt"
+# feature_file_path = "/Users/echo/Desktop/SK_Learning/SteamDataMining/MLLIB/data/libsvm_word2vec_classification.txt"
+feature_file_path = "/Users/echo/Desktop/SK_Learning/SteamDataMining/MLLIB/data/libsvm_tencent2vec_classification.txt"
 
 with open(feature_file_path, 'r', encoding='utf-8') as fo:
     head = fo.readline()
@@ -89,7 +90,7 @@ def FeedforwardNeuralNet(input_size):
 
     # train the model
     model = trainer.fit(train)
-    model.write().overwrite().save("save/word2vec_nn")
+    model.write().overwrite().save("save/tencent2vec_nn")
 
     # compute accuracy on the test set
     result = model.transform(test)
@@ -101,7 +102,8 @@ def FeedforwardNeuralNet(input_size):
 def test_model():
     # model = LinearSVCModel.load("save/bert_svc")
     # model = LogisticRegressionModel.load("save/bert_logistic")
-    model = MultilayerPerceptronClassificationModel.load("save/word2vec_nn")
+    # model = MultilayerPerceptronClassificationModel.load("save/word2vec_nn")
+    model = MultilayerPerceptronClassificationModel.load("save/tencent2vec_nn")
 
     predictions = model.transform(test)
 
@@ -117,4 +119,4 @@ def test_model():
               % (row.label, row.prediction, row.comment))
 
 # FeedforwardNeuralNet(feature_size)
-test_model()
+# test_model()

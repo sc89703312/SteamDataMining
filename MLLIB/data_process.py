@@ -62,8 +62,9 @@ def process_feature_file():
 
 def libsvm():
     items = []
-    fo = open('data/features_word2vec.txt', 'r', encoding='utf-8')
+    # fo = open('data/features_word2vec.txt', 'r', encoding='utf-8')
     # fo = open('data/features.txt', 'r', encoding='utf-8')
+    fo = open('data/features_tencent2vec.txt', 'r', encoding='utf-8')
     comments = comment_coll.find()
     features = fo.readlines()
 
@@ -75,7 +76,8 @@ def libsvm():
         })
 
     # fw = open('data/libsvm_classification.txt', 'w', encoding='utf-8')
-    fw = open('data/libsvm_word2vec_classification.txt', 'w', encoding='utf-8')
+    # fw = open('data/libsvm_word2vec_classification.txt', 'w', encoding='utf-8')
+    fw = open('data/libsvm_tencent2vec_classification.txt', 'w', encoding='utf-8')
     for item in items:
         features = item['features']
         features_ls = [str(index+1) + ":" + str(num)  for index,num in enumerate(features)]
